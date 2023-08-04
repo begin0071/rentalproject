@@ -108,7 +108,7 @@
 
 /* Slide-in animation for the service title on hover */
 .service-item:hover h3 a {
-    color: #921111; /* You can change the color to your preference */
+    color: #d61414; /* You can change the color to your preference */
     position: relative;
     animation: slideIn 0.5s ease-in-out;
 }
@@ -167,12 +167,262 @@
 }
 
 #home:hover .cta-button a {
-    background-color: #932714; /* You can change the color to your preference */
+    background-color: #d61414; /* You can change the color to your preference */
 }
 
 /* Scale down the CTA button text on hover */
 #home .cta-button a:hover {
     transform: scale(1.85);
+}
+
+/* Why Choose Us section styles */
+#why-choose-us {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.choose-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.choose-us-container h2 {
+    font-size: 32px;
+    color: #180660;
+    margin-bottom: 20px;
+}
+
+.choose-us-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.choose-us-container li {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+/* Add a bullet point before each list item */
+.choose-us-container li::before {
+    content: "\2022"; /* Bullet point character */
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    padding-right: 0.5em;
+}
+
+/* Adjust spacing between list items */
+.choose-us-container li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Cool hover effect on list items */
+.choose-us-container li:hover {
+    color: #d61414; /* You can change the color to your preference */
+    cursor: pointer;
+}
+
+/* Slight scale up on hover */
+.choose-us-container li:hover::before {
+    transform: scale(1.1);
+}
+
+
+/* Services section styles */
+#services {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Cool style for the Services heading */
+#services h2 {
+    font-size: 38px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Animated underline on hover for the Services heading */
+#services h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 150px;
+    height: 2px;
+    background-color: #d40606;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#services h2:hover::after {
+    opacity: 1;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Cool hover effect on the navigation links */
+nav a:hover {
+    color: #e90b0b; /* You can change the color to your preference */
+}
+
+/* Mobile styles - hide the navigation menu by default and show it when the user clicks on the menu button */
+@media (max-width: 768px) {
+    .menu-icon {
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 20px; /* Update left to position the menu on the left side */
+        background-color: #007bff;
+        padding: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Cool logo effect */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Scale up the logo on hover */
+    /* Add any other effects you want, like rotation or box-shadow */
+}
+
+/* Rest of the CSS remains the same */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Cool hover effect on the navigation links */
+nav a:hover {
+    color: #e00808; /* You can change the color to your preference */
+}
+
+/* Mobile styles - hide the navigation menu by default and show it when the user clicks on the menu button */
+@media (max-width: 768px) {
+    .menu-icon {
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        background-color: #007bff;
+        padding: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -204,8 +454,21 @@
             </div>
         </div>
     </section>
-
+    <section id="why-choose-us">
+        <div class="choose-us-container">
+            <!-- Add your content for "Why Choose Us" section here -->
+            <h2>Why choose us?</h2>
+           
+            <ul>
+                <li>At Wounded Warrior Dumpsters, we take great pride in more than just providing exceptional dumpster rental services. We are committed to making a positive impact on the lives of our nation's wounded warriors. That's why we proudly donate 15% of our profits to an incredible organization called Wounded Warrior Project.</li>
+                <li>Every warrior has a next mission, and Wounded Warrior Project has been at the forefront of supporting our heroes since 2003. Originally starting as a grassroots effort, they have evolved into an organization that addresses the post-service needs of veterans, offering vital programs in mental health, career counseling, and long-term rehabilitative care. Together, we strive to foster the most successful and well-adjusted generation of wounded service members in our nation's history.</li>
+                <li>When you choose Wounded Warrior Dumpsters for your rental needs, you're not only receiving top-notch service, but you're also joining us in making a difference. By working with us, you directly contribute to the lives of warriors and their families, ensuring they receive the support and opportunities they deserve. Together, we honor and empower these brave individuals who have sacrificed so much for our country.</li>
+               <li> As you navigate our website, you'll see how our commitment to wounded warriors is at the heart of everything we do. From the moment you contact us to the timely delivery and removal of our dumpsters, our dedicated team of experts will provide you with the best possible experience. You can trust that your project not only receives the attention it deserves but also helps us contribute to a cause we deeply care about.</li>
+            </ul>
+        </div>
+    </section>
     <section id="services">
+        <h2>Services</h2>
         <div class="service-container">
             <div class="service-item">
                 <img src="assets/rolloffdumpsters.jpeg" alt="Roll Off Dumpsters">
