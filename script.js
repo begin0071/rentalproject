@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const slideshowImages = [
-        "assets/carousel2.png",
+        "assets/carouseler.png",
         // Add more image URLs here if you want to have additional slides
     ];
 
